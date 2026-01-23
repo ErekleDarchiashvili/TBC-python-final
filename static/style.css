@@ -1,0 +1,73 @@
+body, h1, h2, h3, h4, h5, h6, .navbar, .card-title, .card-body, a, p, .btn {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar .fa-shopping-cart {
+    font-size: 1.5rem;
+    color: white !important;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 56px;
+    left: -220px;
+    width: 220px;
+    height: 100%;
+    background: #212529;
+    padding-top: 20px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+#sidebar a {
+    color:white; display:block; padding:10px 20px; text-decoration:none;
+}
+
+#sidebar a:hover {
+    background:#343a40;
+}
+
+#sidebar.show {
+    left:0;
+}
+
+.content {
+    margin-left:0; transition:margin-left 0.3s;
+}
+
+.content.shift {
+    margin-left:220px;
+}
+
+#content .row {
+    justify-content: center;
+}
+
+#content .card {
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#content .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#content .card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#content .card-body {
+    text-align: center;
+}
+
+#content .card .btn {
+    font-size: 0.8rem; padding: 5px 0;
+}
